@@ -1,5 +1,7 @@
 package javaDataStructuresPartTwo;
 
+import java.util.Arrays;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -32,7 +34,20 @@ public class Main {
         }
 
         System.out.println(index);
+        
+        int size = 4;
+        int power = 2;
+        double[] sizePower = new double[]{0, 1, 2, 3};
+        System.out.println(Arrays.toString(toPower(sizePower)));
 
+	}
+	
+	public static double[] toPower (double sizePower[]){
+	    for (int i = 0; i < sizePower.length; i++) {
+	         sizePower[i] = Math.pow(sizePower[i], 2);
+	    }
+	    return sizePower;
+		
 	}
 
 }
