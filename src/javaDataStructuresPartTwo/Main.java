@@ -1,20 +1,16 @@
 package javaDataStructuresPartTwo;
 
-import java.util.ArrayList;
-
 public class Main {
 
 	public static void main(String[] args) {
 		
-		ArrayList<Integer> addNumbers = new ArrayList<>();// create ArrayList
+		Integer[] addNumbers = {1, 5, 9, 10, 20};// create the given Array
 		
-		addNumbers.add(1);// add integers to the ArrayList
-		addNumbers.add(5);
-		addNumbers.add(9);
-		addNumbers.add(10);
-		addNumbers.add(20);
+		int sumAddNumbers = 0;// sum the numbers of the Array
+		for (int i : addNumbers)
+			sumAddNumbers += i;
 		
-		
+		System.out.printf("The sum of the numbers is %s\n", sumAddNumbers);// print the sum of the numbers in the Array to the console
 		
 		
 		double[ ] exampleArray = {1,5,6,5,4,1};
